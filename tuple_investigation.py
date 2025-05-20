@@ -83,7 +83,22 @@ t = (27, 30, 45)
 print (x, y, z)
 
 
+# data structures
 
+#list []
+values = [1,2,3]
+
+#tuple ()
+tvalues = (1, 2, 3)
+
+#dictionary {}
+dvalues = {
+    1: "one", 
+    2: "two", 
+    3: "three"
+}
+
+# set
 
 
 

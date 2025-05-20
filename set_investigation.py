@@ -26,7 +26,6 @@ s = set(l)
 print (s)
 
 s1 = {"red", "green", "blue", "violet"}
-
 s2 = {"green", "indigo", "violet"}
 
 combined_set = s1.union(s2)
