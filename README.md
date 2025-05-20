@@ -6,3 +6,5 @@ function parameters. named, positional
 
 a tuple that doesn't have the ()
 
+Understanding that assigning a variable to an list doesn't copy the list - the use of id() to determine if two things are actually the same thing
+
