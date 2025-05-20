@@ -8,3 +8,5 @@ a tuple that doesn't have the ()
 
 Understanding that assigning a variable to an list doesn't copy the list - the use of id() to determine if two things are actually the same thing
 
+Understand the meaning of 
+    if __name__ == "__main__":
