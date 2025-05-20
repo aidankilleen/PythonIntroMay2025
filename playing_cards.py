@@ -20,12 +20,13 @@ class Card:
         if suit >=1 and suit <= 4:
             self.__suit = suit
         else:
-            print ("invalid suit")
+            raise CardError(f"Invalid suit:{suit}")
+
     def set_value(self, value):
         if value >=1 and value <= 13:
             self.__value = value
         else:
-            print ("invalid suit")
+            raise CardError(f"Invalid value:{value}")
 
     def __str__(self):
 
@@ -95,6 +96,9 @@ class Deck:
         # deal the next card
         return self.cards.pop()
         
+class CardError(Exception):
+    pass
+
 
 
 if __name__ == "__main__":

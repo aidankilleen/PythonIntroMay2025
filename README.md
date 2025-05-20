@@ -10,3 +10,8 @@ Understanding that assigning a variable to an list doesn't copy the list - the u
 
 Understand the meaning of 
     if __name__ == "__main__":
+
+
+Understand that a division will always return float
+
+// integer division - i.e. it returns an int (rounded down)
