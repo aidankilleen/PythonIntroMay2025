@@ -12,6 +12,8 @@ def greet(name):
     print (first_name)
     first_name = "CHANGED" 
 
+def another_function():
+    first_name = "changed"
 
 print (first_name)
 # print (message) message is not available outside the function
