@@ -29,7 +29,45 @@ print (df)
 
 df = pd.read_json("sales.json")
 
-df.to_csv('sales.csv', index=False)
+pivot = pd.pivot_table(
+    df,
+    index="product",
+    columns="colour",
+    values="quantity",
+    aggfunc="sum",  # Sum quantities if there are duplicates
+    fill_value=0    # Optional: replace NaN with 0
+)
+
+pivot['Totals'] = pivot.sum(axis=1)
+print (pivot)
+
+totals_row = pivot.sum(axis=0).to_frame().T
+totals_row.index = ["Totals"]
+print (totals_row)
+
+# combine the pivot with the totals
+pivot_with_totals = pd.concat([pivot, totals_row])
+
+print (pivot_with_totals)
+
+
+
+
+
+
+
+#pivot_table = df.pivot(index=['id'], columns=['colour'], values=['quantity'])
+
+# pivot['Total'] = pivot.sum(axis=1)
+
+# totals_row = pivot.sum(axis=0).to_frame().T
+# totals_row.index = ['Grand Total']
+
+# pivot_with_totals = pd.concat([pivot, totals_row])
+
+# print (pivot_with_totals)
+
+#df.to_csv('sales.csv', index=False)
 
 
 
