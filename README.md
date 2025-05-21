@@ -15,3 +15,12 @@ Understand the meaning of
 Understand that a division will always return float
 
 // integer division - i.e. it returns an int (rounded down)
+
+
+List comprehension - almost certainly in the exam
+
+the third number in a slice [1:10:2]  2 - is step
+
+for - else construct 
+
+inline conditional
