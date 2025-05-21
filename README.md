@@ -24,3 +24,6 @@ the third number in a slice [1:10:2]  2 - is step
 for - else construct 
 
 inline conditional
+
+bitwise operators
+
