@@ -1,10 +1,26 @@
 # error_handling_investigation.py
 
+"""
+multiline comments go here
+
+
+"""
+
 
 from random import randint
 
 
-print("error handling investigation")
+finished = False
+
+while not finished:
+    # do something
+    pass
+
+    finished = True
+
+
+
+print("error handling investigation") 
 
 n = 10
 i = 0
